@@ -2,7 +2,7 @@ import gradio as gr
 from huggingface_hub import InferenceClient
 
 
-client = InferenceClient("black-forest-labs/FLUX.1-dev", token="use urs token")
+client = InferenceClient("black-forest-labs/FLUX.1-dev", token="use your own  token")
 
 
 def generate_image(prompt):
@@ -19,3 +19,4 @@ iface = gr.Interface(fn=generate_image,
 
 
 iface.launch(share=True)
+
