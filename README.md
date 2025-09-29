@@ -26,7 +26,7 @@ Users can enter a text prompt, and the app will generate an AI-created image in 
 
 Python
 
-Gradio – user interface
+Gradio – user interface 33 as developer can change the user interface according to their need, and for the userfriendly
 
 Hugging Face Hub – model hosting & inference
 
