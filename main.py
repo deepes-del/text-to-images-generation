@@ -10,7 +10,7 @@ def generate_image(prompt):
     return image
 
 
-# Adding a title to the Gradio interface
+#  u can chnage the interface  as user need and framwork
 iface = gr.Interface(fn=generate_image, 
                      inputs=gr.Textbox(label="Enter Text Prompt"), 
                      outputs=gr.Image(type="pil", label="Generated Image"),
@@ -19,4 +19,5 @@ iface = gr.Interface(fn=generate_image,
 
 
 iface.launch(share=True)
+
 
