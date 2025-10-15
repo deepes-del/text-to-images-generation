@@ -1,4 +1,4 @@
-import gradio as gr
+import gradio as gr  # user can change the interface framwork accordingly
 from huggingface_hub import InferenceClient
 
 
@@ -19,5 +19,6 @@ iface = gr.Interface(fn=generate_image,
 
 
 iface.launch(share=True)
+
 
 
