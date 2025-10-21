@@ -1,5 +1,5 @@
 import gradio as gr  # user can change the interface framwork accordingly
-from huggingface_hub import InferenceClient
+from huggingface_hub import InferenceClient  #imported the brain on the model from the hugging face
 
 
 client = InferenceClient("black-forest-labs/FLUX.1-dev", token="use your own  token")
@@ -19,6 +19,7 @@ iface = gr.Interface(fn=generate_image,
 
 
 iface.launch(share=True)
+
 
 
 
