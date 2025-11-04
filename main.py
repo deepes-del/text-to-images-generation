@@ -18,7 +18,8 @@ iface = gr.Interface(fn=generate_image,
                      flagging_options=["average","good","bad"])
 
 
-iface.launch(share=True)
+iface.launch(share=True)#for getting the public acces links use the share parameter to true always 
+
 
 
 
