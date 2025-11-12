@@ -3,6 +3,7 @@ from huggingface_hub import InferenceClient  #imported the brain on the model fr
 
 
 client = InferenceClient("black-forest-labs/FLUX.1-dev", token="use your own  token")
+#you can also use the local llm for the image geneartion , with the minimun requriments of the system.
 
 
 def generate_image(prompt):
@@ -19,6 +20,7 @@ iface = gr.Interface(fn=generate_image,
 
 
 iface.launch(share=True)#for getting the public acces links use the share parameter to true always 
+
 
 
 
